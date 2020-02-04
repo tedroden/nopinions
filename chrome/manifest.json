@@ -1,0 +1,16 @@
+{
+    "name": "NOpinions",
+    "version": "1.0",
+    "description": "Get rid of the opinion section on The new York Times",
+    "icons": {
+      "128": "icon.png"
+    },    
+    "permissions": ["https://*.nytimes.com/", "activeTab"],
+    "content_scripts": [
+	{
+	    "matches": ["https://*.nytimes.com/*"],
+	    "js": ["index.js"]
+	}
+    ],    
+    "manifest_version": 2
+}
